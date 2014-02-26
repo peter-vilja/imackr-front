@@ -1,0 +1,42 @@
+<% if (images.length != 0) { %>
+<div class="actions">
+	<button class="btn btn-default glyphicon glyphicon-pencil edit-page">
+	<button class="btn btn-default glyphicon glyphicon-trash remove-page">
+</div>
+<div class="images template-<%- template %>">
+<% _.each(images, function(image){ %>
+    <figure>
+    	<img src="<%- image.imageUrl %>" alt="<%- image.caption %>"/>
+    	<figcaption>
+    		<h3><%- image.caption %></h3>
+    	</figcaption>
+    </figure>
+<% }); %>
+</div>
+<% } %>
+<div class="edit template-<%- template %> clearfix">
+	<div class="btn-group template-selection clearfix">
+		<button class="btn btn-default layout <%- template == 1 ? 'active' : '' %>" data-layout="1">layout 1</button>
+		<button class="btn btn-default layout <%- template == 2 ? 'active' : '' %>" data-layout="2">layout 2</button>
+		<button class="btn btn-default layout <%- template == 3 ? 'active' : '' %>" data-layout="3">layout 3</button>
+	</div>
+	<% for (var i = 0; i < template; i++) { %>
+	<section class="page-item">
+		<div class="image-container">
+			<div class="loading hidden">Loading…</div>
+			<div class="image form-group">
+				<label>Give the url of an image</label>
+				<input type="url" class="image-url form-control" placeholder="Add url to image" value="<%- typeof images[i] != "undefined" ? images[i].imageUrl : '' %>">
+				<button class="btn btn-default flickr-download"><i class="glyphicon glyphicon-cloud-download"></i></button>
+			</div>
+			<button class="change-image hidden btn btn-default">Change image</button>
+		</div>
+		<div class="caption-container form-group">
+			<label>Add image caption</label>
+			<input type="text" class="image-caption form-control" placeholder="Add a image caption" value="<%- typeof images[i] != "undefined" ? images[i].caption : '' %>">
+		</div>
+	</section>
+	<% } %>
+	<button class="btn btn-default cancel">Cancel</button>
+	<button class="btn btn-success save-page">Save</button>
+</div>

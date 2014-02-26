@@ -1,0 +1,31 @@
+.sign {
+  margin: 80px auto 0;
+  width: 300px;
+  font-family: 'OpenSansLight';
+
+  button {
+    border-radius: 4px;
+    padding: 10px 20px;
+    display: block;
+    width: 100%;
+  }
+
+  input {
+    display: block;
+    height: 35px;
+    border-radius: 4px;
+    width: 100%;
+    border: 1px solid rgba(0,0,0,0.3);
+    margin-bottom: 7px;
+    padding-left: 5px;
+  }
+
+  .signin {
+    width: 100%;
+  }
+
+  .signup {
+    margin-top: 50px;
+    width: 100%;
+  }
+}

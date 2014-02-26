@@ -1,0 +1,75 @@
+.album {
+    position: relative;
+    padding: 0 0 60px;
+    margin: 0 0 10px;
+    overflow: hidden;
+    ul {
+        list-style-type: none; 
+        white-space: nowrap;
+        padding: 0;
+        transition: transform 500ms ease;        
+    }
+
+    .public-link {
+        color: #333;
+        &.public {
+            color: #5cb85c
+        }
+    }
+
+    .link-input {
+        display: none;
+        height: 33px;
+        border-radius: 4px;
+        width: 485px;
+        border: 1px solid rgba(0,0,0,0.2);
+        padding-left: 4px;
+        color: rgba(0,0,0,0.6);
+        &.public {
+            display: inline;
+        }
+    }
+    h3 {
+        text-align: center;
+        color: #777;
+    }
+
+    .share {
+        display: inline-block;
+        float: right;
+        width: 250px;
+    }
+}
+
+.album nav span {
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+    width: 50px;
+    height: 100px;
+    background: #35ae35;
+    color: #fff;
+    font-size: 35px;
+    text-align: center;
+    line-height: 100px;
+    cursor: pointer;
+    font-weight: normal;
+    &:hover {
+        background: #35cc35;
+    }
+    &.page-next {
+        right: 0px;
+    }
+    &.page-prev {
+        left: 0px;
+    }
+}
+
+.flickr-search-results {
+    display: inline-block;
+    .flickr-result {
+        display: inline-block;
+        float: left;
+        padding: 5px;
+    }
+}

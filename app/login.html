@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> deprecated in IE 11 -->
+    <title>Sign in</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../static/app/dist/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../static/app/dist/main.css">
+</head>
+<body>
+	<header>
+		<span class="logo">IMACKR</span>
+	</header>
+	<div class="sign">
+		<div class="signin">
+			<form action="/authenticate/" method="POST"> {% csrf_token %}
+			    <input type="email" required name="email" id="email" value="" placeholder="Email" />
+			    <input type="password" required name="password" id="password" value="" placeholder="Password" />
+			    <button type="submit" name="submit" class="btn btn-primary">Sign in</button>
+			</form>
+		</div>
+		<div class="google">
+			<form action="/gauth/" method="POST"> {% csrf_token %}
+				<button class="btn btn-default gbutton">g+ Sign in using Google</button>
+			</form>
+		</div>
+		<div class="signup">
+			<form action="/sign/" method="POST"> {% csrf_token %}
+				<input type="text" name="firstname" id="first-name" value="" placeholder="First name" />
+				<input type="text" name="lastname" id="last-name" value="" placeholder="Last name" />
+			    <input type="email" required name="email" value="" placeholder="Email" />
+			    <input type="password" required name="password" value="" placeholder="Password" pattern=".{6,}" title="Password's minimum length is 6 characters" />
+			    <button type="submit" name="submit" class="btn btn-default">Sign up</button>
+			</form>
+		</div>
+	</div>
+</body>
+</html>

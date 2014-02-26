@@ -1,0 +1,12 @@
+<% if (images.length != 0) { %>
+<div class="images template-<%- template %>">
+<% _.each(images, function(image){ %>
+    <figure>
+    	<img src="<%- image.imageUrl %>" alt="<%- image.caption %>"/>
+    	<figcaption>
+    		<h3><%- image.caption %></h3>
+    	</figcaption>
+    </figure>
+<% }); %>
+</div>
+<% } %>

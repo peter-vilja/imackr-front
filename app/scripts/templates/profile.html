@@ -1,0 +1,15 @@
+<div class="profile-content">
+  <img id="profile-image" src="<%- image %>" class="profile-image" alt="Profile picture">
+  <form id="profile-form">
+    <span>IMAGE URL</span>
+    <input id="image-url" name="image-url" type="text" value="<%- image %>" placeholder="Image url" />
+    <span>FIRST NAME</span>
+    <input name="first-name" type="text" value="<%- first_name %>" placeholder="First name" />
+    <span>LAST NAME</span>
+    <input name="last-name" type="text" value="<%- last_name %>" placeholder="Last name" />
+    <span>EMAIL</span>
+    <input name="email" type="text" value="<%- email %>" placeholder="Email" />
+    <input type="submit" class="btn btn-success profile-submit" />
+  </form>
+  <button id="profile-cancel" class="btn btn-default">Cancel</button>
+</div>

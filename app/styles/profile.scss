@@ -1,0 +1,29 @@
+.profile-content {
+  width: 300px;
+  margin: 80px auto 0;
+  span {
+    display: block;
+    font-size: 12px;
+  }
+  input {
+    height: 35px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    width: 100%;
+    margin-bottom: 7px;
+    padding-left: 5px;
+  }
+  .profile-submit {
+    padding: 0;
+    border: 0;
+  }
+  .profile-image {
+    width: 180px;
+    height: 180px;
+    border-radius: 90px;
+    margin-left: 50px;
+  }
+  button {
+    width: 100%;
+  }
+}

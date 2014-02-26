@@ -1,0 +1,12 @@
+<div>
+  <% if (success == 0) { %>
+       <p> Thank you for your purchase. Your payment has been received and you will get your album within 2 weeks.</p>
+    <% } %>
+  <% if (success == 1) { %>
+      <p> Your order is cancelled.</p>
+    <% } %>
+  <% if (success == 2) { %>
+      <p> We are very sorry but something went wrong with your order. Please try to re-send the order again.</p>
+    <% } %>
+    <a href="/#albums/<%- albumId %>" class="btn btn-default">Back to the album</a>
+</div>

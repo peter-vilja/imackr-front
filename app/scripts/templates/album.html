@@ -1,0 +1,52 @@
+<button class="btn btn-success add-page">
+	<span class="glyphicon glyphicon-plus"></span> Add a new page
+</button>
+<button id="order" class="btn btn-default">
+	<span class="glyphicon glyphicon-shopping-cart"></span>
+</button>
+<button id="public-link" class="btn btn-default public-link">
+	<span class="glyphicon glyphicon-link"></span>
+</button>
+<input id="link-input" class="link-input" type="text" readonly/>
+<div class="share">
+  <div class="g-plus" data-action="share"></div>
+  <script type="text/javascript">
+    (function() {
+      var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+      po.src = 'https://apis.google.com/js/platform.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+    })();
+  </script>
+</div>
+<h3><%- name %></h3>
+<ul id="album-pages">
+</ul>
+<!-- Modal -->
+<div class="modal fade" id="flickr-modal" tabindex="-1" role="dialog" aria-labelledby="flickr-modal-label" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="flickr-modal-label">Search images from Flickr</h4>
+      </div>
+      <div class="modal-body">
+        <form id="flickr-search" class="navbar-form" role="search">
+            <div class="form-group">
+              <input id="flickr-search-term" type="text" class="form-control" placeholder="Search">
+            </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+        <span class="hidden loading">Loading...</span>
+        <ul class="flickr-search-results">
+    	</ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<nav>
+    <span class="page-prev hidden">&lt;</span>
+    <span class="page-next hidden">&gt;</span>
+</nav>

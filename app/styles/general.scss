@@ -1,0 +1,68 @@
+body {
+  font-family: 'OpenSansLight';
+  background-color: #F0EDE6;
+}
+
+header {
+  background-color: #fff;
+  height: 60px;
+  width: 100%;
+  border-bottom: 1px solid rgba(0,0,0,0.3);
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.3);
+
+  .logout {
+    float: right;
+    margin: 12px 12px 0 0;
+  }
+
+  .signin {
+    float: right;
+    margin: 12px 12px 0 0;
+  }
+
+  .profile {
+    float: right;
+    margin: 12px 5px 0 0;
+  }
+
+  .logo {
+    font-size: 30px;
+    float: left;
+    margin: 12px 0 0 48px;
+    font-family: 'OpenSansLightItalic';
+    text-decoration: none;
+    color: #222;
+  }
+}
+
+div[role="main"] {
+  margin: 10px 5%;
+}
+
+.gbutton {
+  margin-top: 20px;
+  &:first-letter {
+    font-size: 20px;
+  }
+}
+
+@font-face {
+  font-family: 'OpenSansLight';
+  src: url('fonts/OpenSans-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSansLightItalic';
+  src: url('fonts/OpenSans-LightItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSansRegular';
+  src: url('fonts/OpenSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

@@ -1,0 +1,73 @@
+.albums {
+	list-style: none;
+	margin: 30px 0 0 0;
+	padding: 0;
+	li {
+		animation: scale 0.5s ease;
+		animation-fill-mode: forwards;
+		float: left;
+		margin: 0 50px 50px 0;
+		padding: 10px;
+		background: #fff;
+		border: 1px solid #ccc;
+		border-radius: 3px;
+		cursor: pointer;
+		box-shadow: 1px 1px 5px rgba(#000, 0.2);
+		img {
+			width: 300px;
+			height: 200px;
+			border-radius: 2px;
+			display: block;
+		}
+		figcaption {
+			padding: 8px 0 11px 10px;
+			color: #05a1c3;
+			display: inline-block;
+		}
+		.edit {
+			display: none;
+			margin: 5px 0 0 0;
+		}
+		figcaption, .edit {
+
+			width: 70%;
+		}
+		&.editing {
+			border-style: dashed;
+			figcaption {
+				display: none;
+			}
+			.edit {
+				display: inline-block;
+			}
+		}
+
+		button {
+			display: inline;
+			width: 40px;
+			height: 28px;
+			text-align: center;
+			margin-left: 2px;
+			padding-left: 10px;
+			border: 0;
+			background: #fff;
+
+			&:hover {
+				border: 1px solid rgba(0,0,0,0.3);
+				background: #fff;
+			}
+			&:focus {
+				background: #fff;
+			}
+		}
+	}
+}
+
+@keyframes scale {
+	0% {
+		transform: scale(0);
+	}
+	100% {
+		transform: scale(1);
+	}
+}

@@ -1,0 +1,25 @@
+{
+  "name": "imackr_front",
+  "version": "0.0.0",
+  "description": "Appliction for browsing photo albums.",
+  "private": true,
+  "dependencies": {
+    "jquery": "~2.1.0",
+    "backbone": "~1.1.0",
+    "lodash": "~2.4.1"
+  },
+  "devDependencies": {
+    "gulp": "~3.4.0",
+    "gulp-browserify": "~0.3.3",
+    "gulp-concat": "~2.1.7",
+    "gulp-mocha": "~0.4.0",
+    "gulp-autoprefixer": "0.0.4",
+    "gulp-ruby-sass": "~0.2.0",
+    "gulp-template": "~0.1.1",
+    "event-stream": "~3.1.0",
+    "gulp-uglify": "~0.2.1",
+    "gulp-minify-css": "~0.3.0"
+  },
+  "author": "patrikvilja",
+  "license": "MIT"
+}
